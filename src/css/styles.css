@@ -290,6 +290,7 @@ section {
 /* Sobre Section */
 
 @media screen and (max-width: 980px) {
+  /* Responsivo Menu */
   .menu-toggler {
     display: block;
   }
@@ -332,5 +333,31 @@ section {
   .menu-toggler.active span:nth-child(3) {
     transform: rotate(45deg);
     bottom: 14px;
+  }
+  /* Responsivo Menu */
+
+  /* Section Responsiva (Sobre) */
+  .inner-width {
+    max-width: 800px;
+  }
+
+  .sobre-pic {
+    margin: 0 auto 60px auto;
+  }
+
+  .sobre-texto {
+    flex: 100%;
+    text-align: center;
+  }
+  /* Section Responsiva (Sobre) */
+}
+
+@media screen and (max-width: 600px) {
+  .inner-width {
+    padding: 0 20px;
+  }
+
+  .skill {
+    width: 100%;
   }
 }
