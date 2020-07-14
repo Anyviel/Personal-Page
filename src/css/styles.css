@@ -286,8 +286,63 @@ section {
 .sql:after {
   width: 50%;
 }
-
 /* Sobre Section */
+
+/* Services Section */
+section.dark {
+  background-color: #353b48;
+}
+
+section.dark .section-title {
+  color: #f1f1f1;
+}
+
+section.dark .section-title::before {
+  background-color: #f1f1f1;
+}
+
+section.dark .section-title::after {
+  border: 4px solid #353b48;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: calc(33% - 20px);
+  text-align: center;
+  border: 1px solid #48dbfb;
+  border-radius: 6px;
+  margin: 20px 0;
+  padding: 40px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.service .icon {
+  color: #48dbfb;
+  font-size: 40px;
+  margin-bottom: 20px;
+  transition: .3s linear;
+}
+
+.service h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.service:hover {
+  background: #48dbfb;
+}
+
+.service:hover .icon {
+  color: #353b48;
+}
+/* Services Section */
 
 @media screen and (max-width: 980px) {
   /* Responsivo Menu */
@@ -350,6 +405,12 @@ section {
     text-align: center;
   }
   /* Section Responsiva (Sobre) */
+
+  /* Section Responsiva (Services) */
+  .service {
+    width: calc(40% - 20px);
+  }
+  /* Section Responsiva (Sobre) */
 }
 
 @media screen and (max-width: 600px) {
@@ -358,6 +419,10 @@ section {
   }
 
   .skill {
+    width: 100%;
+  }
+
+  .service {
     width: 100%;
   }
 }
