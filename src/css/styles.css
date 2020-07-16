@@ -344,6 +344,56 @@ section.dark .section-title::after {
 }
 /* Services Section */
 
+/* Formação Section */
+.time-line {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: calc(33% - 20px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px 20px;
+  padding: 30px;
+  position: relative;
+}
+
+.block::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 120%;
+  background-color: #ddd;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.block::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #48dbfb;
+  border-radius: 50%;
+  left: -28px;
+  top: 30px;
+}
+
+.block h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.block p {
+  font-size: 15px;
+  color: #444;
+}
+/* Formação Section */
+
+
 @media screen and (max-width: 980px) {
   /* Responsivo Menu */
   .menu-toggler {
@@ -411,6 +461,13 @@ section.dark .section-title::after {
     width: calc(40% - 20px);
   }
   /* Section Responsiva (Sobre) */
+
+  /* Section Responsiva (Formação) */
+  .block {
+    width: calc(100% - 20px);
+  }
+  /* Section Responsiva (Formação) */
+
 }
 
 @media screen and (max-width: 600px) {
@@ -425,4 +482,10 @@ section.dark .section-title::after {
   .service {
     width: 100%;
   }
+
+  /* Section Responsiva (Formação) */
+  .block {
+    width: 100%;
+  }
+  /* Section Responsiva (Formação) */
 }
