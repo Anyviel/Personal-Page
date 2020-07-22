@@ -9,6 +9,18 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #48dbfb;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #353b48;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #48dbfb;
+}
+
 /* Navbar Section */
 .navbar {
   position: fixed;
@@ -644,6 +656,13 @@ footer {
     width: calc(50% - 20px);
   }
 
+  /* Section Responsiva (Contato) */
+  .contact-info .item {
+    width: 100%;
+    margin: 10px 0;
+  }
+  /* Section Responsiva (Contato) */
+
 }
 
 @media screen and (max-width: 600px) {
@@ -667,5 +686,9 @@ footer {
 
   .work {
     width: 100%;
+  }
+
+  .nameZone, .emailZone {
+    max-width: 100%;
   }
 }
