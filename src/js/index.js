@@ -1,10 +1,15 @@
 $(document).ready(function() {
   $(window).scroll(function() {
-    if(this.scrollY > 30)
+    if(this.scrollY > 650) {
       $(".navbar").addClass("sticky");
-    else
+      $(".goTop").fadeIn()
+    } else {
       $(".navbar").removeClass("sticky");
+      $(".goTop").fadeOut()
+    }
   });
+
+  $(".goTop").click(function() {scroll(0,0)})
 
   $(".menu-toggler").click(function() {
     $(this).toggleClass("active");
